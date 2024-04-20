@@ -42,7 +42,7 @@ function displayComments() {
   const commentsContainer = document.getElementById('commentsContainer');
   commentsContainer.innerHTML = '';
 
-  comments.forEach(comment => {
+  comments.slice().reverse().forEach(comment => { // Reverse the order of comments
     const commentElement = document.createElement('div');
     commentElement.textContent = comment;
     commentElement.style.border='1px solid black';

@@ -48,4 +48,4 @@ function displayComments() {
     commentElement.style.border='1px solid black';
     commentsContainer.appendChild(commentElement);
   });
-}
+}    console.log(commentElement)
